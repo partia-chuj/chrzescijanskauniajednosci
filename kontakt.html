@@ -37,15 +37,17 @@
             <div class="card gold-border">
                 <h3>Napisz do nas</h3>
                 <p>Masz pomysł na zmianę w szkole lub państwie? Chcesz do nas dołączyć? Skorzystaj z formularza!</p>
-                <form style="margin-top: 20px;">
+                <form  action="https://formspree.io/f/mdaaerdn"
+                    method="POST"
+                    style="margin-top: 20px;">
                     <div style="margin-bottom: 15px;">
-                        <input type="text" placeholder="Twoje Imię" style="width: 100%; padding: 12px; border-radius: 5px; border: 1px solid #ccc;">
+                        <input type="email" name="name" placeholder="Twoje Imię" style="width: 100%; padding: 12px; border-radius: 5px; border: 1px solid #ccc;">
                     </div>
                     <div style="margin-bottom: 15px;">
-                        <input type="email" placeholder="Twój E-mail" style="width: 100%; padding: 12px; border-radius: 5px; border: 1px solid #ccc;">
+                         <input type="email" name="email" placeholder="Twój E-mail" style="width: 100%; padding: 12px; border-radius: 5px; border: 1px solid #ccc;">
                     </div>
                     <div style="margin-bottom: 15px;">
-                        <textarea placeholder="Twoja wiadomość / postulat" rows="5" style="width: 100%; padding: 12px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+                        <textarea name="message" placeholder="Twoja wiadomość / postulat" rows="5" style="width: 100%; padding: 12px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
                     </div>
                     <button type="submit" class="btn btn-gold" style="width: 100%; border: none; cursor: pointer;">Wyślij wiadomość</button>
                 </form>
@@ -77,3 +79,4 @@
 
 </body>
 </html>
+
